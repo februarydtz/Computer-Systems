@@ -18,7 +18,7 @@ Show all file
 List in long format, that will show a message as:
 >-rwxr-xr-x  1 user  staff  33432 Mar 11 13:11 hello
 
-The first character should be '-', 'd', '-' means it's a normal file, 'd' means it's a directory;<br>
+The first character should be '-' or 'd', '-' means it's a normal file, 'd' means it's a directory;<br>
 After that is three group of 'rwx', represents the current user permissions, user group permissions and other user permissions respectively. 'r' means have read permission, 'w' means have write or modify permission, 'x' means execute permission. These can also present by numbers, 'r' = 4, 'w' = 2, 'x' = 1, for example, 'rwxr-xr-x' = 755. <br>
 Then user and user group, file size, last modify time and file name.<br>
 
@@ -91,3 +91,50 @@ Do not prompt for confirmation, <font color="red">DANGEROUS</font>
 
 10. Display last N (default 10) lines of each file
 >tile [-N] [file ...]
+
+11. Change mode
+>chmod [permisson number] [file]
+
+## Informative Commands
+1. Display date and time
+>date
+
+2. Show your user id
+>whoami
+
+3. Show system uptime and load
+>uptime
+
+4. Show your recent commands
+>history
+
+## Keyboard Shortcuts
+`Ctrl-a`: Jump to beginning of line
+
+`Ctrl-e`: Jump to end of line
+
+`Ctrl-k`: Delete to end of line
+
+`Ctrl-u`: Delete to start of line
+
+`Ctrl-w`: Delete previous word
+
+`Ctrl-y`: Insert last deleted text
+
+`Ctrl-r`: Interactively search previous commands
+
+`Ctrl-c`: Interrupt current command
+
+`Ctrl-z`: Suspend current command (resume with `fg`)
+
+`Ctrl-d`: Delete character forward; or, end of input
+
+$\uparrow$ or `Ctrl-p`: Previous line entered
+
+$\downarrow$ or `Ctrl-n`: Next line entered
+
+`!!`: Repeat last command
+
+`TAB` or `Ctrl-i`: Complete word
+
+`TAB TAB`: List possible completions
