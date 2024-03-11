@@ -3,6 +3,7 @@
 1. Print working directory
 > pwd
 
+
 2. List directory contents;
 > ls [options] [file ...]
 
@@ -70,14 +71,23 @@ User's home directory
 >rm [options] file ...
 
 Options:
-> rm -d [file]
+>rm -d [file]
 
 Remove empty directories
 
-> rm -r [file]
+>rm -r [file]
 
 Remove files and directories recursively
 
-> rm -f [file]
+>rm -f [file]
 
-Do not prompt for confirmation, <p color='red'>DANGEROUS</p>
+Do not prompt for confirmation, <font color="red">DANGEROUS</font>
+
+8. Concatenate each file and print to screen
+>cat [file ...]
+
+9. Display first N (default 10) lines of each file
+>head [-N] [file ...]
+
+10. Display last N (default 10) lines of each file
+>tile [-N] [file ...]
